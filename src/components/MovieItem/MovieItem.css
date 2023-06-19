@@ -1,0 +1,125 @@
+section.movie {
+    display: flex;
+    color: #1bdddd;
+    background-color: #EBEBEB;
+    margin-bottom: 48px;
+    min-width: 100%;
+}
+
+section.movie-info {
+    width: 100%;
+}
+
+div.movie-header {
+    width: 100%;
+    display: flex;
+    background: linear-gradient(to bottom, #116193 60%, #EBEBEB 40%);
+    padding: 32px 12px 12px 12px;
+}
+
+.movie img {
+    height: 300px;
+    width: 200px;
+}
+
+div.rating-circle {
+    background-color: #116193;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+}
+
+div.rating-border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    font-weight: 500;
+    border-radius: 64px;
+    font-size: 24px;
+    border-color: #01dddd;
+    border-style: solid;
+    border-width: 4px;
+}
+
+div.movie-header-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 16px;
+}
+
+div.title {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    color: #01dddd;
+    height: 50%;
+}
+
+.title h2 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+
+div.date {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    color: black;
+    height: 50%;
+    padding-top: 4px;
+}
+
+.date h3 {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+div.movie-description {
+    color: black;
+    padding: 0 32px;
+    opacity: 0.8;
+    font-family: Lato, sans-serif;
+}
+
+div.movie-tags {
+    display: flex;
+    gap: 4px;
+    padding: 16px 0;
+    font-weight: 400;
+}
+
+span.movie-tag {
+    font-family: Abel, sans-serif;
+    background-color: white;
+    border-color: #116193;
+    color: #116193;
+    border-width: 2px;
+    border-radius: 100px;
+    border-style: solid;
+    padding: 5px 10px;
+}
+
+div.no-image-movie {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    padding: 100px;
+    background-color: #DBDBDB;
+    background-image: url('https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-38-picture-grey-c2ebdbb057f2a7614185931650f8cee23fa137b93812ccb132b9df511df1cfac.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}

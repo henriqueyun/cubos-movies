@@ -1,13 +1,13 @@
-import './App.css'
+import { RouterProvider } from 'react-router-dom';
 import Header from './components/Header'
-import Movies from './pages/Movies'
+import router from './router';
 
 function App() {
 
   return (
     <>
-    <Header/>
-    <Movies />
+      <Header />
+      <RouterProvider router={router} />
     </>
   )
 }

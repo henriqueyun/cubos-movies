@@ -6,7 +6,12 @@ section.movie {
     min-width: 100%;
 }
 
+section.movie-info {
+    width: 100%;
+}
+
 div.movie-header {
+    width: 100%;
     display: flex;
     background: linear-gradient(to bottom, #116193 50%, #EBEBEB 50%);
     padding: 32px;
@@ -100,4 +105,20 @@ span.movie-tag {
     border-radius: 100px;
     border-style: solid;
     padding: 5px 10px;
+}
+
+div.no-image-movie {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    padding: 100px;
+    background-color: #DBDBDB;
+    background-image: url('https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-38-picture-grey-c2ebdbb057f2a7614185931650f8cee23fa137b93812ccb132b9df511df1cfac.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }

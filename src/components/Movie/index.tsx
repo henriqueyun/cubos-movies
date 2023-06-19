@@ -9,7 +9,10 @@ function Movie({ movie }: any) {
 
     return (
         <section className='movie'>
-            <img src={`https://www.themoviedb.org/t/p/w600_and_h900_bestv2/${movie.poster_path}`} alt="Fear the walking dead poster" />
+            {movie.poster_path 
+                ? <img src={`https://www.themoviedb.org/t/p/w600_and_h900_bestv2/${movie.poster_path}`} alt={`${movie.description} poster`} />
+                : <div className='no-image-movie'>Não há imagem disponível</div>
+            }
             <section className='movie-info'>
                 <div className='movie-header'>
                     <div className='circle-wrapper'>

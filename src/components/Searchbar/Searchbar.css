@@ -1,0 +1,14 @@
+input[type="search"] {
+    border-radius: 16px;
+    border: none;
+    background-color: #EBEBEB;
+    color: #71A3C1;
+    padding: 12px 24px;
+    width: 100%;
+}
+
+section.search {
+    display: flex;
+    padding: 32px 0;
+    width: 100%;
+}

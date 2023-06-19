@@ -1,0 +1,101 @@
+section.movie {
+    display: flex;
+    color: #1bdddd;
+    background-color: #EBEBEB;
+}
+
+div.movie-header {
+    display: flex;
+    background: linear-gradient(to bottom, #116193 50%, #EBEBEB 50%);
+    padding: 32px;
+}
+
+img {
+    height: 300px;
+    width: 200px;
+}
+
+div.rating-circle {
+    background-color: #116193;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+}
+
+div.rating-border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    font-weight: 500;
+    border-radius: 64px;
+    font-size: 24px;
+    border-color: #01dddd;
+    border-style: solid;
+    border-width: 4px;
+}
+
+div.movie-header-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 16px;
+}
+
+div.title {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    color: #01dddd;
+    height: 50%;
+}
+
+.title h2 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+
+div.date {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    color: black;
+    height: 50%;
+}
+
+.date h3 {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    opacity: 0.5;
+}
+
+div.movie-description {
+    color: black;
+    padding: 0 32px;
+    opacity: 0.8;
+    font-family: Lato, sans-serif;
+}
+
+div.movie-tags {
+    display: flex;
+    gap: 4px;
+    padding: 16px 0;
+    font-weight: 400;
+}
+
+span.movie-tag {
+    font-family: Lato, sans-serif;
+    background-color: white;
+    border-color: #116193;
+    color: #116193;
+    border-width: 2px;
+    border-radius: 100px;
+    border-style: solid;
+    padding: 5px 10px;
+}

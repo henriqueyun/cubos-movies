@@ -1,4 +1,3 @@
-
 import Header from './components/Header'
 import Movies from './pages/Movies'
 

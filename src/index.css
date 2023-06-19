@@ -6,3 +6,7 @@
     font-family: Abel, sans-serif;
     box-sizing: border-box;
 }
+
+li {
+    list-style-type: none;
+}

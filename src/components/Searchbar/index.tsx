@@ -1,9 +1,10 @@
 import './Searchbar.css';
 
-function Searchbar() {
+
+function Searchbar({onChange, searchText}: any) {
     return (
         <section className='search'>
-            <input type="search" placeholder='Busque um filme por um nome, ano ou gênero'/>
+            <input onChange={(e) => onChange(e.target.value)} value={searchText} type="search" placeholder='Busque um filme por um nome, ano ou gênero'/>
         </section>
     );
 }

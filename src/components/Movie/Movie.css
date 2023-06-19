@@ -2,6 +2,8 @@ section.movie {
     display: flex;
     color: #1bdddd;
     background-color: #EBEBEB;
+    margin-bottom: 48px;
+    min-width: 100%;
 }
 
 div.movie-header {

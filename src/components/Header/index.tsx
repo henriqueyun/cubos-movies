@@ -3,7 +3,9 @@ import './Header.css'
 function Header() {
     return (
         <header>
-            Movies
+            <a href="/">
+                Movies
+            </a>
         </header>
     );
 }

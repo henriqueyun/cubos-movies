@@ -1,9 +1,10 @@
 import './Movies.css';
-import Movie from "../../components/Movie";
+import MovieItem from "../../components/MovieItem";
 import Searchbar from "../../components/Searchbar";
 import { useEffect, useState } from 'react';
 import { client } from '../../client/client';
 import MovieModel from '../../client/models/Movie';
+import { Link } from 'react-router-dom';
 
 function Movies() {
     const [searchText, setsearchText] = useState("");
@@ -51,7 +52,6 @@ function Movies() {
                 afterSelected--;
             }
             numbers = numbers.reverse();
-            console.log(beforeSelected);
             while (beforeSelected > 1) {
                 numbers.unshift(page - beforeSelected);
                 beforeSelected--;
@@ -75,10 +75,14 @@ function Movies() {
     }
 
     return (
-        <div className="container">
-            <main>
+        <div className="container-wrapper">
+            <main className='container'>
                 <Searchbar onChange={setsearchText} searchText={searchText} />
-                {movies.map(movie => <Movie key={movie.id} movie={movie} />)}
+                {movies.map(movie =>
+                    <Link key={movie.id} to={`/movie/${movie.id}`} className='movie-link'>
+                        <MovieItem movie={movie} />
+                    </Link>
+                )}
                 <ul className='pager'>
                     {pageNumbers().map(pn =>
                         <PageNumberLink key={pn} pageNumber={pn} isSelected={pn === page} onClick={setPage} />

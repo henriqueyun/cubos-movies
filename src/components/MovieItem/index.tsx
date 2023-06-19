@@ -1,6 +1,6 @@
-import './Movie.css';
+import './MovieItem.css';
 
-function Movie({ movie }: any) {
+function MovieItem({ movie }: any) {
 
     function formatDate(date: string): string {
         const [year, month, day] = date.split('-');
@@ -18,7 +18,7 @@ function Movie({ movie }: any) {
                     <div className='circle-wrapper'>
                         <div className="rating-circle">
                             <div className="rating-border">
-                                {Math.round(movie.vote_average * 10)}
+                                {Math.round(movie.vote_average * 10)}%
                             </div>
                         </div>
                     </div>
@@ -44,4 +44,4 @@ function Movie({ movie }: any) {
     );
 }
 
-export default Movie;
+export default MovieItem;

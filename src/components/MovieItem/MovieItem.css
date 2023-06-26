@@ -3,7 +3,7 @@ section.movie {
     color: #1bdddd;
     background-color: #EBEBEB;
     margin-bottom: 48px;
-    min-width: 100%;
+    width: 100%;
 }
 
 section.movie-info {
@@ -122,4 +122,21 @@ div.no-image-movie {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+}
+
+@media (max-width: 720px) {
+    section.movie {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie img {
+        height: 33%;
+        width: 100%;
+    }
+
+    .title h2 {
+        font-size: x-large;
+    }
 }

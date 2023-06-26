@@ -4,12 +4,12 @@ function MovieItem({ movie }: any) {
 
     function formatDate(date: string): string {
         const [year, month, day] = date.split('-');
-        return `${day}/${month}/${year}`; 
+        return `${day}/${month}/${year}`;
     }
 
     return (
         <section className='movie'>
-            {movie.poster_path 
+            {movie.poster_path
                 ? <img src={`https://www.themoviedb.org/t/p/w600_and_h900_bestv2/${movie.poster_path}`} alt={`${movie.description} poster`} />
                 : <div className='no-image-movie'>Não há imagem disponível</div>
             }

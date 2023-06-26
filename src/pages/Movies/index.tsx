@@ -78,18 +78,18 @@ function Movies() {
         <div className="container-wrapper">
             <main className='container'>
                 <Searchbar onChange={setsearchText} searchText={searchText} />
-                {movies.map(movie =>
-                    <Link key={movie.id} to={`/movie/${movie.id}`} className='movie-link'>
-                        <MovieItem movie={movie} />
+                {movies.length
+                    ? movies.map(movie =>
+                    <Link key={movie.id} to={`/movie/${movie.id}`} className='movie-link' >
+                        <MovieItem movie={movie}/>
                     </Link>
-                )}
+                )   :
+                    <h1 className="movies-not-available">Não há filmes disponíveis</h1>}
                 <ul className='pager'>
                     {pageNumbers().map(pn =>
                         <PageNumberLink key={pn} pageNumber={pn} isSelected={pn === page} onClick={setPage} />
                     )}
                 </ul>
-                <span>
-                </span>
             </main>
         </div>
     );
@@ -100,4 +100,5 @@ function PageNumberLink({ pageNumber, isSelected, onClick }: any) {
         ? (<li className='selected'><span>{pageNumber}</span></li>)
         : (<li onClick={() => onClick(pageNumber)}>{pageNumber}</li>)
 }
+
 export default Movies;

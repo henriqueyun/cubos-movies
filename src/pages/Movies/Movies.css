@@ -6,6 +6,11 @@ main.container {
     width: 100%;
 }
 
+.container .movies-not-available {
+    padding: 20px 0;
+    color: #116193;
+}
+
 div.container-wrapper {
     max-width: 1080px;
     margin: 0 auto;
@@ -15,6 +20,7 @@ ul.pager {
     display: flex;
     align-items: center;
     gap: 16px;
+    padding: 0 8px 16px 8px;
 }
 
 ul.pager li {
@@ -48,6 +54,21 @@ li.selected {
 
 main .movie-link {
    width: 100%;
-   color: none;
+   color: unset;
    text-decoration: none;
+}
+
+@media (max-width: 720px) {
+    main .movie-link {
+        width: 80%;
+     }
+
+    ul.pager {
+        position: fixed;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.75);
+        padding: 8px 16px;
+        margin: 8px;
+        border-radius: 100px;
+    }
 }

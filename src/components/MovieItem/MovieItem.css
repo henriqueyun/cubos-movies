@@ -135,8 +135,17 @@ div.no-image-movie {
         height: 33%;
         width: 100%;
     }
-
+    
     .title h2 {
         font-size: x-large;
+    }
+
+    .circle-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    div.movie-header {
+        background: linear-gradient(to bottom, #116193 55%, #EBEBEB 45%);
     }
 }

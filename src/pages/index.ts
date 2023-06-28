@@ -1,4 +1,4 @@
-import Movie from "./Movie";
+import MoviePage from "./MoviePage";
 import Movies from "./Movies";
 
-export { Movie, Movies}
+export { MoviePage, Movies}

@@ -1,6 +1,6 @@
 div.movie-container {
-    max-width: 1080px;
-    margin: 0 auto;
+    max-width: 1280px;
+    margin: 40px auto;
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
@@ -70,7 +70,7 @@ hr.subtitle-divider {
 }
 
 .movie-info img {
-    height: 600x;
+    height: 600px;
     width: 400px;
 }
 
@@ -78,4 +78,43 @@ hr.subtitle-divider {
     color: #116193;
     font-size: 24px;
     padding-top: 8px;
+}
+
+.movie-container .movie-info-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+}
+
+
+.movie-info-footer .movie-tags {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+@media (max-width: 720px) {
+
+    div.movie-info {
+        flex-direction: column;
+    }
+
+    div.movie-info section {
+        padding: 0 16px;
+    }
+
+    .sub-infos {
+        flex-direction: column;
+    }
+
+    .movie-info-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .movie-info img {
+        height: 33%;
+        width: 100%;
+    }
 }

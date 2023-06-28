@@ -9,6 +9,10 @@ function MoviesService(http: AxiosStatic) {
         discover: async (page = 1) => {
             const { data } = await http.get(`/discover/movie?page=${page}&api_key=${import.meta.env.VITE_API_KEY}`)
             return data;
+        },
+        find: async (id: number) => {
+            const { data } = await http.get(`/movie/${id}?api_key=${import.meta.env.VITE_API_KEY}`)
+            return data;
         }
     }
 }

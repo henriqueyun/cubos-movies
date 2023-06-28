@@ -1,11 +1,9 @@
 import './MovieItem.css';
+import { formatDate } from '../../util';
+import VoteCircle from '../VoteCircle';
+import MovieTag from '../MovieTag';
 
 function MovieItem({ movie }: any) {
-
-    function formatDate(date: string): string {
-        const [year, month, day] = date.split('-');
-        return `${day}/${month}/${year}`;
-    }
 
     return (
         <section className='movie'>
@@ -15,13 +13,7 @@ function MovieItem({ movie }: any) {
             }
             <section className='movie-info'>
                 <div className='movie-header'>
-                    <div className='circle-wrapper'>
-                        <div className="rating-circle">
-                            <div className="rating-border">
-                                {Math.round(movie.vote_average * 10)}%
-                            </div>
-                        </div>
-                    </div>
+                    <VoteCircle width={80} voteAverage={movie.vote_average} />
                     <div className='movie-header-text'>
                         <div className='title'>
                             <h2>{movie.title}</h2>
@@ -34,9 +26,9 @@ function MovieItem({ movie }: any) {
                 <div className='movie-description'>
                     {movie.overview}
                     <div className='movie-tags'>
-                        <span className='movie-tag'>Ação</span>
-                        <span className='movie-tag'>Aventura</span>
-                        <span className='movie-tag'>Terror</span>
+                        <MovieTag tagName='Ação' />
+                        <MovieTag tagName='Aventura' />
+                        <MovieTag tagName='Terror' />
                     </div>
                 </div>
             </section>

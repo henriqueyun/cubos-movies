@@ -22,30 +22,6 @@ div.movie-header {
     width: 200px;
 }
 
-div.rating-circle {
-    background-color: #116193;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80px;
-    height: 80px;
-    border-radius: 80px;
-}
-
-div.rating-border {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 72px;
-    height: 72px;
-    font-weight: 500;
-    border-radius: 64px;
-    font-size: 24px;
-    border-color: #01dddd;
-    border-style: solid;
-    border-width: 4px;
-}
-
 div.movie-header-text {
     display: flex;
     flex-direction: column;
@@ -97,17 +73,6 @@ div.movie-tags {
     font-weight: 400;
 }
 
-span.movie-tag {
-    font-family: Abel, sans-serif;
-    background-color: white;
-    border-color: #116193;
-    color: #116193;
-    border-width: 2px;
-    border-radius: 100px;
-    border-style: solid;
-    padding: 5px 10px;
-}
-
 div.no-image-movie {
     width: 200px;
     height: 300px;
@@ -138,11 +103,6 @@ div.no-image-movie {
     
     .title h2 {
         font-size: x-large;
-    }
-
-    .circle-wrapper {
-        display: flex;
-        align-items: center;
     }
 
     div.movie-header {

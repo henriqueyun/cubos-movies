@@ -3,20 +3,15 @@ interface Movie {
     title: string,
     overview: string,
     status: string,
-    language: string,
-    duration: string,
+    original_language: string,
+    runtime: string,
     budget: number,
     revenue: number
     popularity: number,
-    release_date: Date,
-}
-
-
-interface SearchResponse {
-    page: number,
-    total_pages: number,
-    total_results: number,
-    results: Movie[],
+    release_date: string,
+    vote_average: number,
+    poster_path: string,
+    genres: any[],
 }
 
 export default Movie;
